@@ -26,10 +26,10 @@ const DiaryItem = ({id, emotion, content, date}) => {
 					<div className="day">{strDay}</div>
 				</div>
 				<div className="info_content" onClick={goDetail}>
-					{content.slice(0, 18)}
+					<span className="highlight">{content.slice(0, 18)}</span>
 				</div>
 				<div className="btn_wrapper">
-					<MyButton text={<MdModeEdit color="#86B4E7" />} onClick={goEdit} />
+					<MyButton text={<MdModeEdit />} onClick={goEdit} />
 				</div>
 			</div>
 		</div>

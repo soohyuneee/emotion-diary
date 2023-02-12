@@ -73,7 +73,6 @@ body {
 	padding-top: 0;
 	padding-bottom: 0;
 	font-size: 24px;
-	transition: 0.5s;
 }
 
 .MyButton_positive {
@@ -155,6 +154,11 @@ header button {
 	cursor: pointer;
 	font-family: 'LeeSeoyun';
 	font-size: 18px;
+	outline-style: none;
+}
+.DiaryList .ControlMenu:hover {
+	background-color: #86b4e7;
+	color: #fafafa;
 }
 
 /* DiaryItem */
@@ -205,12 +209,19 @@ header button {
 	padding-bottom: 5px;
 	margin-left: 30px;
 	flex-grow: 1;
+	transition: 0.5s;
 }
 
-.DiaryItem .info_content_mobile {
-	display: none;
+.highlight:hover {
+	display: inline;
+	box-shadow: inset 0 -10px 0 #fee5ac; /*-10px은 highlight의 두께*/
+	transition: 0.5s;
 }
 
-.DiaryItem .btn_wrapper {
-	padding-top: 5px;
+.btn_wrapper {
+	margin-top: 7px;
+}
+
+.btn_wrapper button :hover {
+	color: #86b4e7;
 }
