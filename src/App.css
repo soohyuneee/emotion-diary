@@ -64,7 +64,8 @@ body {
 }
 
 .MyButton_default {
-	background-color: #e3e3e3;
+	/* background-color: #e3e3e3; */
+	background-color: transparent;
 	color: black;
 }
 
