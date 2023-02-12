@@ -61,12 +61,19 @@ body {
 
 	white-space: nowrap;
 	font-family: 'LeeSeoyun';
+	transition: 0.5s;
 }
 
 .MyButton_default {
-	/* background-color: #e3e3e3; */
 	background-color: transparent;
 	color: black;
+}
+
+.MyButton_default:hover {
+	padding-top: 0;
+	padding-bottom: 0;
+	font-size: 24px;
+	transition: 0.5s;
 }
 
 .MyButton_positive {
@@ -77,6 +84,10 @@ body {
 .MyButton_nagative {
 	background-color: #fec7c7;
 	color: black;
+}
+
+.MyButton_positive:hover {
+	opacity: 0.7;
 }
 
 /* HEADER */
@@ -111,4 +122,95 @@ header .head_btn_right {
 
 header button {
 	font-family: 'LeeSeoyun';
+}
+
+/* DiaryList */
+.DiaryList .menu_wrapper {
+	margin-top: 20px;
+	margin-bottom: 30px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.DiaryList .menu_wrapper .right_col {
+	flex-grow: 1;
+}
+
+.DiaryList .menu_wrapper .right_col button {
+	width: 100%;
+}
+
+.DiaryList .ControlMenu {
+	margin-right: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #ececec;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	cursor: pointer;
+	font-family: 'LeeSeoyun';
+	font-size: 18px;
+}
+
+/* DiaryItem */
+.DiaryItem {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: 5px dashed #e2e2e2;
+}
+
+.DiaryItem .info_wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.DiaryItem .emotion_img_wrapper {
+	min-width: 48px;
+	height: 48px;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.DiaryItem .diary_date {
+	cursor: pointer;
+	flex-direction: column;
+	margin-left: 20px;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.DiaryItem .diary_date .date {
+	font-size: 20px;
+	margin-bottom: 8px;
+}
+
+.DiaryItem .diary_date .day {
+	font-size: 18px;
+	color: gray;
+	opacity: 0.7;
+}
+
+.DiaryItem .info_content {
+	font-size: 18px;
+	cursor: pointer;
+
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: 30px;
+	flex-grow: 1;
+}
+
+.DiaryItem .info_content_mobile {
+	display: none;
+}
+
+.DiaryItem .btn_wrapper {
+	padding-top: 5px;
 }

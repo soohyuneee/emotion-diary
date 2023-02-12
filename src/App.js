@@ -62,7 +62,7 @@ const dummyData = [
 	{
 		id: 5,
 		emotion: 5,
-		content: '오늘의 일기 5',
+		content: '오늘의 일기 5 길게 써보기 20자 넘겠지?',
 		date: 1676192898769,
 	},
 ];
