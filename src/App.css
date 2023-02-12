@@ -1,11 +1,11 @@
 /* 일기 내용 폰트 */
 @font-face {
-	font-family: 'KyoboHandwriting2021sjy';
-	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KyoboHandwriting2021sjy.woff2') format('woff2');
+	font-family: 'KyoboHand';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
-	/* 그 외 폰트 */
 }
+/* 그 외 폰트 */
 @font-face {
 	font-family: 'LeeSeoyun';
 	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff') format('woff');
@@ -36,7 +36,7 @@ body {
 }
 
 #root {
-	background-color: white;
+	background-color: #fafafa;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -64,18 +64,18 @@ body {
 }
 
 .MyButton_default {
-	background-color: #ececec;
+	background-color: #e3e3e3;
 	color: black;
 }
 
 .MyButton_positive {
-	background-color: #64c964;
-	color: white;
+	background-color: #a9d8b9;
+	color: black;
 }
 
 .MyButton_nagative {
-	background-color: #fd565f;
-	color: white;
+	background-color: #fec7c7;
+	color: black;
 }
 
 /* HEADER */
