@@ -165,14 +165,6 @@ header button {
 	outline-style: none;
 }
 
-@media (max-width: 650px) {
-	.DiaryList .ControlMenu {
-		width: 25vw;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-}
-
 .DiaryList .ControlMenu:hover {
 	background-color: #86b4e7;
 	color: #fafafa;
@@ -204,6 +196,14 @@ header button {
 	justify-content: center;
 	cursor: pointer;
 	margin-left: 10px;
+}
+
+@media (max-width: 650px) {
+	.emotion_img_wrapper {
+		max-width: 48px;
+		height: 48px;
+		margin-left: 0px;
+	}
 }
 
 .DiaryItem .diary_date {
