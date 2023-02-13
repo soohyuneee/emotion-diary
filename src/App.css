@@ -77,12 +77,6 @@ body {
 	}
 }
 
-.MyButton_hidden {
-	background-color: transparent;
-	color: transparent;
-	cursor: default;
-}
-
 .MyButton_positive {
 	background-color: #a9d8b9;
 	color: black;
@@ -97,6 +91,12 @@ body {
 	margin-top: 3px;
 	background-color: #e37566;
 	color: white;
+}
+
+.MyButton_hidden {
+	background-color: transparent;
+	color: transparent;
+	cursor: default;
 }
 
 /* HEADER */
