@@ -75,6 +75,12 @@ body {
 	font-size: 24px;
 }
 
+.MyButton_hidden {
+	background-color: transparent;
+	color: transparent;
+	cursor: default;
+}
+
 .MyButton_positive {
 	background-color: #a9d8b9;
 	color: black;
@@ -198,6 +204,7 @@ header button {
 }
 
 .DiaryItem .info_content {
+	font-family: 'KyoboHand';
 	font-size: 18px;
 	cursor: pointer;
 
@@ -220,5 +227,96 @@ header button {
 
 .btn_wrapper .MyButton_default:hover {
 	padding-top: 10px;
-	/* color: #86b4e7; */
+}
+
+/* DiaryEditor */
+
+.DiaryEditor section {
+	margin-bottom: 40px;
+}
+
+.DiaryEditor h4 {
+	font-size: 22px;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+.DiaryEditor .input_date {
+	border: none;
+	border-radius: 5px;
+	background-color: #ececec;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	cursor: pointer;
+
+	font-family: 'LeeSeoyun';
+	font-size: 16px;
+	outline-style: none;
+}
+
+.DiaryEditor .input_date:hover {
+	background-color: #fee5ac;
+}
+
+.DiaryEditor .input_box_emotion_list_wrapper {
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	gap: 2%;
+}
+
+.DiaryEditor textarea {
+	font-family: 'KyoboHand';
+	font-size: 20px;
+
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 200px;
+	resize: vertical;
+
+	border: none;
+	border-radius: 5px;
+	background-color: #ececec;
+	outline-color: #86b4e7;
+
+	padding: 20px;
+}
+
+.DiaryEditor .control_box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* EmotionItem */
+
+.EmotionItem {
+	cursor: pointer;
+
+	border-radius: 5px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.EmotionItem img {
+	width: 50%;
+	margin-bottom: 10px;
+}
+
+.EmotionItem span {
+	font-size: 20px;
+}
+
+.EmotionItem .highlight {
+	display: inline;
+	box-shadow: inset 0 -10px 0 #fee5ac; /*-10px은 highlight의 두께*/
+	transition: 0.5s;
 }
