@@ -91,6 +91,12 @@ body {
 	color: black;
 }
 
+.MyButton_delete {
+	margin-top: 3px;
+	background-color: #e37566;
+	color: white;
+}
+
 /* HEADER */
 header {
 	padding-top: 20px;
@@ -161,6 +167,13 @@ header button {
 .DiaryList .ControlMenu:hover {
 	background-color: #86b4e7;
 	color: #fafafa;
+}
+
+.DiaryList p {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 35%;
 }
 
 /* DiaryItem */

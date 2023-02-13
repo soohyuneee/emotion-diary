@@ -1,5 +1,5 @@
 import {useNavigate} from 'react-router-dom';
-import {useState, useRef, useContext, useEffect} from 'react';
+import {useState, useRef, useContext, useEffect, useCallback} from 'react';
 import MyHeader from './MyHeader';
 import MyButton from './MyButton';
 import EmotionItem from './EmotionItem';
@@ -18,9 +18,9 @@ const DiaryEditor = ({isEdit, originData}) => {
 	const [emotion, setEmotion] = useState();
 	const [content, setContent] = useState();
 
-	const {onCreate, onEdit} = useContext(DiaryDispatchContext);
+	const {onCreate, onEdit, onRemove} = useContext(DiaryDispatchContext);
 
-	const handleClickEmotion = (emotion) => setEmotion(emotion);
+	const handleClickEmotion = useCallback((emotion) => setEmotion(emotion), []);
 	const handleSubmit = () => {
 		if (content.length < 1) {
 			contentRef.current.focus();
@@ -37,6 +37,13 @@ const DiaryEditor = ({isEdit, originData}) => {
 		navigate('/', {replace: true});
 	};
 
+	const handleRemove = () => {
+		if (window.confirm('정말 삭제하시겠습니까?')) {
+			onRemove(originData.id);
+			navigate('/', {replace: true});
+		}
+	};
+
 	useEffect(() => {
 		if (isEdit) {
 			setDate(getStringDate(new Date(parseInt(originData.date))));
@@ -50,7 +57,9 @@ const DiaryEditor = ({isEdit, originData}) => {
 			<MyHeader
 				headText={isEdit ? '일기 수정하기' : '새로운 일기 쓰기'}
 				leftChild={<MyButton text={<FaChevronLeft />} onClick={() => navigate(-1)} />}
-				rightChild={<MyButton type={'hidden'} text={<FaChevronRight />} />}
+				rightChild={
+					isEdit ? <MyButton text={'삭제'} type={'delete'} onClick={handleRemove} /> : <MyButton type={'hidden'} text={<FaChevronRight />} />
+				}
 			/>
 			<div>
 				<section>

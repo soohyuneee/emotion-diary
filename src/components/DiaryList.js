@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import React, {useState} from 'react';
 import MyButton from './MyButton';
 import {useNavigate} from 'react-router-dom';
 import DiaryItem from './DiaryItem';
@@ -14,7 +14,7 @@ const filterOptionList = [
 	{value: 'bad', name: '안좋은 날만'},
 ];
 
-const ControlMenu = ({value, onChange, optionList}) => {
+const ControlMenu = React.memo(({value, onChange, optionList}) => {
 	return (
 		<select
 			className="ControlMenu"
@@ -30,7 +30,7 @@ const ControlMenu = ({value, onChange, optionList}) => {
 			))}
 		</select>
 	);
-};
+});
 
 const DiaryList = ({diaryList}) => {
 	const navigate = useNavigate();
@@ -61,6 +61,7 @@ const DiaryList = ({diaryList}) => {
 		return sortedList;
 	};
 
+	const renderList = getProcessedDiaryList().map((it) => <DiaryItem key={it.id} {...it} />);
 	return (
 		<div className="DiaryList">
 			<div className="menu_wrapper">
@@ -72,9 +73,7 @@ const DiaryList = ({diaryList}) => {
 					<MyButton type={'positive'} text={'새 일기쓰기'} onClick={() => navigate('/new')} />
 				</div>
 			</div>
-			{getProcessedDiaryList().map((it) => (
-				<DiaryItem key={it.id} {...it} />
-			))}
+			{renderList.length >= 1 ? renderList : <p>오늘의 감정을 기록해주세요.</p>}
 		</div>
 	);
 };

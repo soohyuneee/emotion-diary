@@ -1,5 +1,5 @@
 const MyButton = ({text, type, onClick}) => {
-	const btnType = ['positive', 'nagative', 'hidden'].includes(type) ? type : 'default';
+	const btnType = ['positive', 'nagative', 'hidden', 'delete'].includes(type) ? type : 'default';
 
 	return (
 		<>
