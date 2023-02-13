@@ -69,10 +69,12 @@ body {
 	color: black;
 }
 
-.MyButton_default:hover {
-	padding-top: 0;
-	padding-bottom: 0;
-	font-size: 24px;
+@media (min-width: 650px) {
+	.MyButton_default:hover {
+		padding-top: 0;
+		padding-bottom: 0;
+		font-size: 24px;
+	}
 }
 
 .MyButton_hidden {
