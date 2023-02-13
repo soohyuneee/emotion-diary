@@ -15,7 +15,7 @@ const Diary = () => {
 
 	useEffect(() => {
 		const titleElement = document.getElementsByTagName('title')[0];
-		titleElement.innerHTML = `감정 일기장 - 일기 상세보기`;
+		titleElement.innerHTML = `감정 일기장 - 상세보기`;
 	}, []);
 
 	useEffect(() => {
