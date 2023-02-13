@@ -113,7 +113,7 @@ header > div {
 
 header .head_text {
 	width: 50%;
-	font-size: 25px;
+	font-size: 24px;
 	justify-content: center;
 }
 
@@ -164,6 +164,15 @@ header button {
 	font-size: 18px;
 	outline-style: none;
 }
+
+@media (max-width: 650px) {
+	.DiaryList .ControlMenu {
+		width: 25vw;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
 .DiaryList .ControlMenu:hover {
 	background-color: #86b4e7;
 	color: #fafafa;
