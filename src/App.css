@@ -85,10 +85,6 @@ body {
 	color: black;
 }
 
-.MyButton_positive:hover {
-	opacity: 0.7;
-}
-
 /* HEADER */
 header {
 	padding-top: 20px;
@@ -224,5 +220,5 @@ header button {
 
 .btn_wrapper .MyButton_default:hover {
 	padding-top: 10px;
-	color: #86b4e7;
+	/* color: #86b4e7; */
 }
