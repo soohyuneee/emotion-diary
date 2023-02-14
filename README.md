@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# emotion-diary
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 감정 일기장
 
-## Available Scripts
+- [링크](https://soohyuneee-diary-app.web.app/)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+이미지
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 메인 화면
+ <img width="1440" alt="스크린샷 2023-02-14 오후 10 57 26" src="https://user-images.githubusercontent.com/105588175/218759702-053a24f5-a21b-4421-9581-2f7f19d94964.png">
+ 
+- 모바일 화면
+<img width="364" alt="스크린샷 2023-02-14 오후 11 02 26" src="https://user-images.githubusercontent.com/105588175/218760390-aa8cf6f0-9f78-41a8-8ae4-ae98d091e941.png">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 오픈 그래프
+<img width="348" alt="스크린샷 2023-02-14 오후 11 01 19" src="https://user-images.githubusercontent.com/105588175/218760050-5ab5250c-36f6-476e-a150-1fc010aae46b.png">
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 기술스택 : React, firebase </br>
+- 기능 : 월별 일기 리스트업, 일기 쓰기, 일기 수정, 일기 삭제, 일기 상세보기 </br>
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 기능소개
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. 월별 일기 리스트업
+   </br>월별로 일기가 리스트업 됩니다.
+   </br>버튼을 클릭하여 해당 월의 일기를 볼 수 있습니다.
+   </br>일기를 작성 순으로 정렬할 수 있습니다. (최신/ 오래된 순)
+   </br>일기를 감정 별로 필터링할 수 있습니다. (전부/ 좋은 감정/ 안좋은 감정)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. 일기 쓰기, 수정, 삭제, 상세보기
+   </br>새로운 일기를 작성할 수 있습니다.
+   </br>일기 수정 페이지에서 삭제 버튼을 눌러 삭제를 할 수 있습니다.
