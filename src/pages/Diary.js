@@ -15,7 +15,7 @@ const Diary = () => {
 
 	useEffect(() => {
 		const titleElement = document.getElementsByTagName('title')[0];
-		titleElement.innerHTML = `감정 일기장 - 상세보기`;
+		titleElement.textContent = `감정 일기장 - 상세보기`;
 	}, []);
 
 	useEffect(() => {
@@ -28,6 +28,7 @@ const Diary = () => {
 				navigate('/', {replace: true});
 			}
 		}
+		// eslint-disable-next-line
 	}, [id, diaryList]);
 
 	if (!data) {

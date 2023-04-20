@@ -11,7 +11,7 @@ const Edit = () => {
 
 	useEffect(() => {
 		const titleElement = document.getElementsByTagName('title')[0];
-		titleElement.innerHTML = `감정 일기장 - 수정하기`;
+		titleElement.textContent = `감정 일기장 - 수정하기`;
 	}, []);
 
 	useEffect(() => {
@@ -23,6 +23,7 @@ const Edit = () => {
 				navigate('/', {replace: true});
 			}
 		}
+		// eslint-disable-next-line
 	}, [id, diaryList]);
 
 	return <div>{originData && <DiaryEditor isEdit={true} originData={originData} />}</div>;
