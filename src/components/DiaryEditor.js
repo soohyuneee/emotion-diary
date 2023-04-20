@@ -22,6 +22,11 @@ const DiaryEditor = ({isEdit, originData}) => {
 
 	const handleClickEmotion = useCallback((emotion) => setEmotion(emotion), []);
 	const handleSubmit = () => {
+		if (!emotion) {
+			alert('감정을 선택해주세요.');
+			return;
+		}
+
 		if (content.length < 1) {
 			contentRef.current.focus();
 			return;
@@ -85,7 +90,7 @@ const DiaryEditor = ({isEdit, originData}) => {
 				<section>
 					<div className="control_box">
 						<MyButton text={'취소하기'} type={'nagative'} onClick={() => navigate(-1)} />
-						<MyButton text={'작성완료'} type={'positive'} onClick={handleSubmit} />
+						<MyButton text={isEdit ? '수정완료' : '작성완료'} type={'positive'} onClick={handleSubmit} />
 					</div>
 				</section>
 			</div>
